@@ -31,18 +31,23 @@ jobs:
           path: ./target/helloworld.war  
       - name: move war file 
         run: |
-          New-Item -ItemType Directory -Path C:/apache-tomcat-9.0.26/webappa/helloworld
+          New-Item -ItemType Directory -Path C:/apache-tomcat-9.0.26/webapps/helloworld
           Copy-Item ./target/helloworld.war C:/apache-tomcat-9.0.26/webapps/helloworld
       #- name: go to webapps
       #  run: Set-Location -Path C:/apache-tomcat-9.0.26/webapps
       #- name: show contents of new directory
       #  run: dir         
+
+  deploy:
+    needs: build
+    runs-on:
+      - self-hosted
+    steps:
       - name: explode war file
         working-directory: C:/apache-tomcat-9.0.26/webapps/helloworld
         run: |
           jar -xvf helloworld.war
-          Remove-Item helloworld.war
-      
+          Remove-Item helloworld.war            
           
 
                  
