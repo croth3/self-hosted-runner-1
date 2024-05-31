@@ -14,3 +14,9 @@ jobs:
         uses: actions/setup-java@v1
         with:
           java-version: 11   
+      - name: build and package project
+        run: mvn -f pom.xml clean package
+      - name: show contents of current working directory
+        run: ls -la
+      - name: show contents of target directory
+        run: ls -la target          
