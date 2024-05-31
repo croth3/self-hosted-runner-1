@@ -21,6 +21,6 @@ jobs:
       - name: build and package project
         run: mvn -f pom.xml clean package
       - name: show contents of current working directory
-        run: ls -la
-      - name: show contents of target directory
-        run: ls -la target          
+        run: dir
+      #- name: show contents of target directory
+      #  run: dir target          
