@@ -31,8 +31,8 @@ jobs:
           path: ./target/helloworld.war  
       - name: move war file 
         run: |
-          New-Item -ItemType Directory -Path //wjbdevls1/apache-tomcat-9.0.62/webapps/helloworld
-          Copy-Item ./target/helloworld.war //wjbdevls1/apache-tomcat-9.0.62/webapps/helloworld            
+          New-Item -ItemType Directory -Path //wjbdevls1/Tomcat9.0.62/webapps/helloworld
+          Copy-Item ./target/helloworld.war //wjbdevls1/Tomcat9.0.62/webapps/helloworld            
           #New-Item -ItemType Directory -Path C:/apache-tomcat-9.0.26/webapps/helloworld
           #Copy-Item ./target/helloworld.war C:/apache-tomcat-9.0.26/webapps/helloworld  
           #\\wjbdevls1\Tomcat9.0.62\webapps    
@@ -48,7 +48,7 @@ jobs:
           java-version: 11      
       - name: explode war file
         #working-directory: C:/apache-tomcat-9.0.26/webapps/helloworld
-        working-directory: //wjbdevls1/apache-tomcat-9.0.62/webapps/helloworld
+        working-directory: //wjbdevls1/Tomcat9.0.62/webapps/helloworld
         run: |
           jar -xvf helloworld.war
           Remove-Item helloworld.war            
