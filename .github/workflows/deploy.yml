@@ -31,7 +31,7 @@ jobs:
           path: ./target/helloworld.war  
       - name: move war file 
         run: |
-          New-Item -ItemType Directory -Path //wjbdevls1/Tomcat9.0.62/webapps/helloworld
+          New-Item -ItemType Directory -Force -Path //wjbdevls1/Tomcat9.0.62/webapps/helloworld
           Copy-Item ./target/helloworld.war //wjbdevls1/Tomcat9.0.62/webapps/helloworld            
           #New-Item -ItemType Directory -Path C:/apache-tomcat-9.0.26/webapps/helloworld
           #Copy-Item ./target/helloworld.war C:/apache-tomcat-9.0.26/webapps/helloworld  
