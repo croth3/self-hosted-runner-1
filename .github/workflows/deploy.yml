@@ -22,5 +22,5 @@ jobs:
         run: mvn -f pom.xml clean package
       - name: show contents of current working directory
         run: dir
-      #- name: show contents of target directory
-      #  run: dir target          
+      - name: show contents of target directory
+        run: dir target          
