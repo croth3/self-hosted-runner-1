@@ -28,9 +28,13 @@ jobs:
         uses: actions/upload-artifact@v1
         with:
           name: artifact
-          path: ./target/helloworld-0.1.0.war  
-      - name: deploy it
-        run: Copy-Item ./target/helloworld-0.1.0.war C:/apache-tomcat-9.0.26/webapps
+          path: ./target/helloworld.war  
+      - name: move war file 
+        run: Copy-Item ./target/helloworld.war C:/apache-tomcat-9.0.26/webapps
+      - name: go to webapps
+        run: cd C:/apache-tomcat-9.0.26/webapps
+      - name: explode war file
+        run: jar -xvf helloworld.war
       
           
 
