@@ -15,7 +15,7 @@ jobs:
         with:
           java-version: 11 
       - name: set up maven
-        uses: s4u/setup-maven-action@v1.9.0
+        uses: s4u/setup-maven-action@v1.2.0
       - name: build and package project
         run: mvn -f pom.xml clean package
       - name: show contents of current working directory
