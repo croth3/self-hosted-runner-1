@@ -32,8 +32,8 @@ jobs:
       - name: move war file 
         run: Copy-Item ./target/helloworld.war C:/apache-tomcat-9.0.26/webapps
       - name: go to webapps
-        run: CD C:/apache-tomcat-9.0.26/webapps
-      - name: show contents of target directory
+        run: Set-Location -Path C:/apache-tomcat-9.0.26/webapps
+      - name: show contents of new directory
         run: dir         
       - name: explode war file
         run: jar -xvf helloworld.war
