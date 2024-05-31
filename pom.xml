@@ -4,8 +4,11 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.dockerforjavadevelopers</groupId>
-    <artifactId>hello-world</artifactId>
+    <artifactId>helloworld</artifactId>
     <version>0.1.0</version>
+	<packaging>war</packaging>
+	<name>helloworld</name>
+	<description>github actions self-hosted runner demo app</description>    
 
     <parent>
         <groupId>org.springframework.boot</groupId>
