@@ -8,15 +8,18 @@ jobs:
     runs-on:
       - self-hosted
     steps:
-      - name: Install git 
-        run: |
-          apt-get install -y git
-          git --version
-          echo "Path is ... $PATH"
-          PATH=$PATH:$(which git)
-          echo "Path is ... $PATH"    
       - name: get code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v3    
+      #- name: Install git 
+      #  run: |
+      #    apt-get install -y git
+      #    git --version
+      #    echo "Path is ... $PATH"
+      #    PATH=$PATH:$(which git)
+      #    echo "Path is ... $PATH"   
+      - name: Setup Git for Windows' minimal SDK
+        uses: git-for-windows/setup-git-for-windows-sdk@v1       
+
       - name: set up jdk 11
         uses: actions/setup-java@v1
         with:
