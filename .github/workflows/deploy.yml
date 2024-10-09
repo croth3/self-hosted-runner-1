@@ -9,7 +9,7 @@ jobs:
       - self-hosted
     steps:
       - name: check git version
-        run: path   
+        run: echo %path:;=&echo.%   
 
   build:
     needs: install
