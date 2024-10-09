@@ -13,7 +13,7 @@ local.properties
 target/
 .loadpath
 
-actions-runner
+actions-runner/
 
 *.py
 
