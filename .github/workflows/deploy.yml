@@ -12,8 +12,8 @@ jobs:
           sudo apt-get install -y git
           git --version
           echo "Path is ... $PATH"
-          #PATH=$PATH:$(which git)
-          #echo "Path is ... $PATH"     
+          PATH=$PATH:$(which git)
+          echo "Path is ... $PATH"     
 
   build:
     needs: install
