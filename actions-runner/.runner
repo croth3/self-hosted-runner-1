@@ -1,0 +1,9 @@
+﻿{
+  "agentId": 2,
+  "agentName": "LU122293",
+  "poolId": 1,
+  "poolName": "Default",
+  "serverUrl": "https://pipelinesghubeus25.actions.githubusercontent.com/n1t8CPl5rYoFJb9Y0EGKINdtk5PY7RU32C7kcdoJ4dElr0sQXU/",
+  "gitHubUrl": "https://github.com/croth3/self-hosted-runner-1",
+  "workFolder": "_work"
+}

@@ -1,0 +1,18 @@
+[Wed 10/09/2024 11:35:56.05] --------whoami-------- 
+adms\croth3
+[Wed 10/09/2024 11:35:56.97] --------whoami-------- 
+[Wed 10/09/2024 11:35:57.00] Waiting for Runner.Listener.exe (24208) to complete 
+[Wed 10/09/2024 11:35:57.47] Process 24208 finished running 
+[Wed 10/09/2024 11:35:57.48] Sleep 1 more second to make sure process exited 
+[Wed 10/09/2024 11:35:58.58] Re-organize folders 
+[Wed 10/09/2024 11:35:58.73] move "C:\Users\croth3\Documents\workspaces-git\devops-1\helloworld\actions-runner\bin" "C:\Users\croth3\Documents\workspaces-git\devops-1\helloworld\actions-runner\bin.2.316.1" 
+        1 dir(s) moved.
+[Wed 10/09/2024 11:35:58.81] move "C:\Users\croth3\Documents\workspaces-git\devops-1\helloworld\actions-runner\externals" "C:\Users\croth3\Documents\workspaces-git\devops-1\helloworld\actions-runner\externals.2.316.1" 
+        1 dir(s) moved.
+[Wed 10/09/2024 11:35:58.82] Create junction bin folder 
+Junction created for C:\Users\croth3\Documents\workspaces-git\devops-1\helloworld\actions-runner\bin <<===>> C:\Users\croth3\Documents\workspaces-git\devops-1\helloworld\actions-runner\bin.2.320.0
+[Wed 10/09/2024 11:35:58.82] Create junction externals folder 
+Junction created for C:\Users\croth3\Documents\workspaces-git\devops-1\helloworld\actions-runner\externals <<===>> C:\Users\croth3\Documents\workspaces-git\devops-1\helloworld\actions-runner\externals.2.320.0
+[Wed 10/09/2024 11:35:58.84] Update succeed 
+[Wed 10/09/2024 11:35:58.84] update.finished file creation succeed 
+[Wed 10/09/2024 11:35:58.84] Rename "C:\Users\croth3\Documents\workspaces-git\devops-1\helloworld\actions-runner\_diag\SelfUpdate-20241009-163555.log" to be "C:\Users\croth3\Documents\workspaces-git\devops-1\helloworld\actions-runner\_diag\SelfUpdate-20241009-163555.log.succeed" 

@@ -13,6 +13,8 @@ local.properties
 target/
 .loadpath
 
+actions-runner
+
 *.py
 
 .bash_profile
