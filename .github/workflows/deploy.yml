@@ -3,26 +3,14 @@ on:
   push:
     branches:
       - master
-jobs:
-  install:
-    runs-on: ubuntu-latest
-    #whatever
-    #runs-on:
-      #- self-hosted
-      
-    steps:
-      #- name: check git version
-      #  run: echo %path:;="&"echo.%   
-      - name: get code
-        uses: actions/checkout@v3       
+jobs:      
 
   build:
     needs: install
     runs-on:
       - self-hosted
     steps:
-      - name: check git version
-        run: echo "Path is ... $PATH"
+
       - name: get code
         uses: actions/checkout@v3           
 
