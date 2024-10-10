@@ -5,11 +5,15 @@ on:
       - master
 jobs:
   install:
-    runs-on:
-      - self-hosted
+    runs-on: ubuntu-latest
+    #runs-on:
+      #- self-hosted
+      
     steps:
-      - name: check git version
-        run: echo %path:;="&"echo.%   
+      #- name: check git version
+      #  run: echo %path:;="&"echo.%   
+      - name: get code
+        uses: actions/checkout@v3       
 
   build:
     needs: install
